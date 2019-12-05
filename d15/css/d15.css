@@ -1,0 +1,102 @@
+#header .menu li a.active::after, #header .menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: #e9204f;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.dg-btn {
+  position: relative;
+  padding: 12px 30px;
+  border: 1px solid #e9204f;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 700;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 1;
+}
+
+.dg-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: #e9204f;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: -1;
+}
+
+.dg-btn:hover {
+  background: #e9204f;
+  color: white;
+}
+
+.dg-btn:hover::after {
+  width: 100%;
+}
+
+.line {
+  height: 2px;
+  width: 80px;
+  margin: 15px 0;
+  background: #e9204f;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+}
+
+#header .logo a {
+  color: #fff;
+  font-size: 40px;
+}
+
+#header .menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+}
+
+#header .menu li a.active::after {
+  width: 25px;
+}
+
+#header .menu li a::after {
+  width: 0;
+}
+
+#header .menu li a:hover::after {
+  width: 25px;
+}
+
+#digital {
+  background-color: #000;
+  background-image: url(../photo/hero_02.jpg);
+  background-repeat: no-repeat;
+  background-position: 85% 5%;
+  background-size: 840px;
+  height: 100vh;
+  padding: 170px 0;
+}
+
+#digital .digital-middle {
+  color: #fff;
+  z-index: 10;
+}
+
+#digital .digital-middle h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=d15.css.map */
